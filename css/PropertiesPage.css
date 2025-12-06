@@ -27,11 +27,11 @@
     font-size: 20px;
 }
 
-.page #header-page div {
+.page #header-page form {
     position: relative;
 }
 
-.page #header-page div input {
+.page #header-page form input {
     position: relative;
     width: 60vw;
     padding: 20px 10px;
@@ -41,12 +41,12 @@
     outline: 0;
 }
 
-.page #header-page div input:focus {
+.page #header-page form input:focus {
     outline: 0;
     border: var(--color-mid) 2px solid ;
 }
 
-.page #header-page div button {
+.page #header-page form button {
     position: absolute;
     width: 16%;
     height: 100%;
@@ -61,7 +61,7 @@
     font-weight: 700;
 }
 
-.page #header-page div button:hover {
+.page #header-page form button:hover {
     background-color: var(--color-dark);
     transition: ease-in-out 200ms;
     
@@ -76,10 +76,20 @@
     background-color: var(--color-mid);
 }
 
-.page section .filter-div button {
-    padding: 10px;
-    cursor: pointer;
+#filter {
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 6px;
+  background: var(--color-bg);
+  cursor: pointer;
+  transition: 0.2s ease;
+  max-width: 300px;
 }
+
+#filter:hover {
+  border-color: var(--color-dark);
+}
+
 
 .page section div:last-child {
     display: grid;
@@ -142,6 +152,36 @@
     transition: ease-in-out 200ms;
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.pagination a {
+  padding: 10px 16px;
+  background: var(--color-bg);
+  color: var(--color-dark);
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  transition: 0.2s ease;
+}
+
+.pagination a:hover {
+  background: var(--color-mid);
+  color: white;
+}
+
+.pagination a.active {
+  background: var(--color-mid);
+  color: white;
+  pointer-events: none;
+}
+
 
 
 @media screen and (max-width: 1280px) {
@@ -197,13 +237,13 @@
             font-size: 18px;
         }
 
-        .page #header-page div input {
+        .page #header-page form input {
             width: 60vw;
             padding: 18px 10px;
             font-size: 16px;
         }
 
-        .page #header-page div button {
+        .page #header-page form button {
             width: 20%;
             padding: 0px;
             font-size: 16px;
@@ -247,7 +287,7 @@
             font-size: 13.7px;
         }
 
-        .page #header-page div input {
+        .page #header-page form input {
             width: 70vw;
             padding: 15px;
             font-size: 14px;
@@ -283,13 +323,13 @@
             width: 90vw;
         }
 
-        .page #header-page div input {
+        .page #header-page form input {
             width: 70vw;
             padding: 12px;
             font-size: 12px;
         }
 
-        .page #header-page div button {
+        .page #header-page form button {
             width: 25%;
             height: 100%;
             font-size: 12px;
@@ -308,5 +348,18 @@
             padding: 2px;
         }
 
+        #filter {
+            padding: 5px;
+            font-size: 11px;
+            border-radius: 6px;
+            background: #fff;
+            cursor: pointer;
+            transition: 0.2s ease;
+            max-width: 300px;
+            }
+
+        .page section .filter-div p {
+            font-size: 12px;
+        }
 }
 

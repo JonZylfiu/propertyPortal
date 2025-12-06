@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Modern Luxury Villa",
+    "image": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0",
+    "location": "Pristina, Kosova",
+    "price": "$850.000",
+    "specifics": [4, 3, 3200]
+  },
+  {
+    "title": "Cozy Urban Apartment",
+    "image": "https://images.unsplash.com/photo-1580584123752-4f8e58c9f1a7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0",
+    "location": "Tirana, Albania",
+    "price": "$320.000",
+    "specifics": [2, 2, 1200]
+  },
+  {
+    "title": "Beachside Modern House",
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0",
+    "location": "Durres, Albania",
+    "price": "$1.200.000",
+    "specifics": [5, 4, 4000]
+  },
+  {
+    "title": "Mountain View Cabin",
+    "image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0",
+    "location": "Peja, Kosova",
+    "price": "$450.000",
+    "specifics": [3, 2, 1800]
+  },
+  {
+    "title": "Downtown Penthouse",
+    "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0",
+    "location": "Pristina, Kosova",
+    "price": "$950.000",
+    "specifics": [3, 3, 2100]
+  },
+  {
+    "title": "Suburban Family Home",
+    "image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0",
+    "location": "Gjilan, Kosova",
+    "price": "$550.000",
+    "specifics": [4, 2, 2500]
+  },
+  {
+    "title": "Modern Studio Apartment",
+    "image": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0",
+    "location": "Tirana, Albania",
+    "price": "$180.000",
+    "specifics": [1, 1, 600]
+  },
+  {
+    "title": "Luxury Beach Villa",
+    "image": "https://images.unsplash.com/photo-1556911073-52527ac437f4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0",
+    "location": "Saranda, Albania",
+    "price": "$1.500.000",
+    "specifics": [6, 5, 5000]
+  },
+  {
+    "title": "Historic Townhouse",
+    "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0",
+    "location": "Prizren, Kosova",
+    "price": "$620.000",
+    "specifics": [3, 2, 2000]
+  },
+  {
+    "title": "Country Estate",
+    "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0",
+    "location": "Ferizaj, Kosova",
+    "price": "$1.100.000",
+    "specifics": [5, 4, 4500]
+  }
+]

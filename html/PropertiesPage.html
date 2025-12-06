@@ -14,36 +14,38 @@
         <div id="header-page">
             <h3>Find Your Dream Property</h3>
             <p>Discover the perfect home from our extensive collection of properties</p>
-            <div>
-                <input type="text" name="" id="" placeholder="Enter poperty, location...">   
-                <button>Search</button>
-            </div>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Enter poperty, location...">   
+                <button type="submit">Search</button>
+            </form>
         </div>
         <section>
             <div class="filter-div">
-                <span>Showing (10) properties</span>
-                <button>Icon - Filters</button>
+                <p>Showing (10) properties</p>
+                
+                <select id="filter">
+                    <option value="lower-higher">Price: Lower → Higher</option>
+                    <option value="higher-lower">Price: Higher → Lower</option>
+                    <option value="newest">Newest</option>
+                    <option value="oldest">Oldest</option>
+                </select>
             </div>
-            <div>
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-                    <div class="card-body">
-                        <h5>Modern Luxury Villa</h5>                    
-                        <p>Location: Pristina, Kosova.</p>
-                        <span>$850.000</span>
-                    </div>
-                    <div class="card-specs">
-                        <span>Icon - 4 Beds</span>
-                        <span>Icon - 3 Baths</span>
-                        <span>Icon - 3200 sqft</span>
-                    </div>
-                    <button>Check</button>
-                </div>
+            <div id="container">
             </div>
         </section>
+        <div class="pagination">
+            <a href="#">&laquo;</a> 
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">&raquo;</a> 
+        </div>
     </div>
 
     <div style="height: 200px; width: 100%; background-color: blue; margin-top: 200px;">
     </div>
 </body>
+<script src="../js/PropertiesPage.js"></script>
 </html>
