@@ -112,7 +112,7 @@
     font-size: 15px;
 }
 
-.page section div:last-child .card .card-specs {
+.page section div:last-child .card .card-specs, #date {
     margin-left: 10px;
     font-size: 15px;
 }
@@ -135,7 +135,7 @@
     border-radius: 30px;
 }
 
-.page section div:last-child .card button {
+.page section div:last-child .card a {
     padding: 15px 0;
     width: 95%;
     margin: 10px auto;
@@ -145,9 +145,10 @@
     cursor: pointer;
     background-color: var(--color-mid);
     color: #ffffff;
+    text-align: center;
 }
 
-.page section div:last-child .card button:hover {
+.page section div:last-child .card a:hover {
     background-color: var(--color-dark);
     transition: ease-in-out 200ms;
 }
@@ -198,7 +199,7 @@
             font-size: 14px;
         }
 
-        .page section div:last-child .card button {
+        .page section div:last-child .card a {
             padding: 10px 0;
         }
 }
@@ -218,7 +219,7 @@
             font-size: 12px;
         }
 
-        .page section div:last-child .card button {
+        .page section div:last-child .card a {
             padding: 10px 0;
         }
 
@@ -264,7 +265,7 @@
             font-size: 10px;
         }
 
-        .page section div:last-child .card button {
+        .page section div:last-child .card a {
             padding: 8px 0;
         }
 
