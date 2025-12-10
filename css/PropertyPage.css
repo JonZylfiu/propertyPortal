@@ -5,6 +5,7 @@ section {
     width: 90%;
     margin: auto;
 }
+
 .image-div {
     height: 70vh;
     position: relative;
@@ -14,6 +15,7 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 .image-div div {
@@ -23,6 +25,16 @@ section {
     color: #ffffff;
 }
 
+.image-div div h3 {
+    font-size: 30px;
+}
+
+.image-div div p {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 
 .euro-icon {
     color: var(--color-accent);
@@ -41,21 +53,9 @@ section {
     font-weight: 500;
 }
 
-.image-div div h3 {
-    font-size: 30px;
-}
-
-.image-div div p {
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
 .section-body {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 30px;
 }
 
 .section-body .owner-div {
@@ -66,7 +66,6 @@ section {
     margin-top: 50px;
     top: 0;
 }
-
 
 .section-body .owner-div span {
     font-weight: 400;
@@ -93,7 +92,6 @@ section {
     width: 90%;
     border-radius: 20px;
     margin-top: 50px;
-
 }
 
 .section-body .owner-div h3 {
@@ -101,8 +99,8 @@ section {
 }
 
 .specs-cards-div {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 30px 0;
 }
 
@@ -116,7 +114,6 @@ section {
     border-radius: 30px;
     background-color: #ffffff;
 }
-
 
 .about-div h3 {
     line-height: 50px;
@@ -192,4 +189,112 @@ section {
     flex-direction: column;
     line-height: 10px;
     margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .section-body {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .image-div {
+        height: 55vh;
+        position: relative;
+    }
+
+    .location-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .section-body {
+        display: grid;
+        grid-template-columns: 3fr;
+    }
+
+    .specs-cards-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .specs-cards-div div {
+        height: 120px;
+        width: 100%;
+    }
+
+    .specs, .about-div, .property-div, .features-div {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .image-div div {
+        bottom: 20px;
+        left: 30px;
+    }
+
+    .image-div div h3 {
+        font-size: 27px;
+    }
+
+    .image-div div p {
+        font-size: 16px;
+    }
+
+     .specs-cards-div {
+        grid-template-columns: 1fr;
+    }   
+
+    .property-div div {
+        grid-template-columns: 1fr;
+    }
+
+    .specs, .about-div, .property-div, .features-div {
+        padding: 20px;
+    }
+
+    .specs-cards-div div {
+        height: 110px;
+    }
+
+    .owner-contact-div {
+        margin-top: 20px;
+        padding: 5px 10px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .owner-div span {
+        font-size: 15px;
+    }
+
+    .owner-contact-div svg {
+        height: 25px;
+        width: 25px;
+        margin-left: 20px;
+    }
+
+    .owner-contact-div p {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 492px) {
+
+    section {
+        padding-top: 20px;
+        width: 96%;
+        margin: auto;
+    }
+
+    .specs, .about-div, .property-div, .features-div {
+        width: 90%;
+    }    
+
+
 }

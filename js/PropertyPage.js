@@ -1,4 +1,6 @@
 import { fetchProperties } from "./PropertiesPage.js";
+import { readFileSync, writeFileSync } from "fs";
+
 
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get('id');
@@ -12,4 +14,4 @@ async function fetchProperty() {
 
 
 
-fetchProperty()
+fetchProperty();
