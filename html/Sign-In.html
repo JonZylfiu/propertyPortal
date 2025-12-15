@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Register</title>
+    <link rel="stylesheet" href="/css/Sign-In.css">
+</head>
+<body>
+
+<main class="login-wrapper">
+    <div class="container" id="container">
+
+        <!-- SIGN UP -->
+        <div class="form-container sign-up-container">
+            <form id="signupForm">
+                <h1>Create Account</h1>
+
+                <input type="text" id="signupName" placeholder="Name">
+                <span class="error" id="signupNameError"></span>
+
+                <input type="email" id="signupEmail" placeholder="Email">
+                <span class="error" id="signupEmailError"></span>
+
+                <input type="password" id="signupPassword" placeholder="Password">
+                <span class="error" id="signupPasswordError"></span>
+
+                <span class="success" id="signupSuccess"></span>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+
+        <!-- SIGN IN -->
+        <div class="form-container sign-in-container">
+            <form id="loginForm">
+                <h1>Sign In</h1>
+
+                <input type="email" id="loginEmail" placeholder="Email">
+                <span class="error" id="loginEmailError"></span>
+
+                <input type="password" id="loginPassword" placeholder="Password">
+                <span class="error" id="loginPasswordError"></span>
+
+                <!-- FORGOT PASSWORD -->
+                <a href="#" class="forgot-password">Forgot your password?</a>
+
+                <span class="success" id="loginSuccess"></span>
+
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+
+        <!-- OVERLAY -->
+        <div class="overlay-container">
+            <div class="overlay">
+
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back</h1>
+                    <p>Please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+
+                <div class="overlay-panel overlay-right">
+                    <h1>Welcome to Property Portal</h1>
+                    <p>Create an account to access our design services</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</main>
+<script src="/js/Sign-In.js"></script>
+</body>
+</html>
