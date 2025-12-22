@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/homepage.css">
+    <!--linking Swiper Js css-->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<!-- lidhja me jquery--><script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+
+    <link rel="stylesheet" href="../css/homepage.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+
+     <nav class="navbar">
+         <ul class="slidebar">
+           <li onclick=closeSlideBar()><a href="#"><i class="fa-solid fa-x"></i></a></li>
+
+            <li><a href=" ">Home</a>
+            <li><a href=" ">About us</a>
+            <li><a href=" ">Properties</a>
+            <li><a href=" ">Sing up</a> </li>
+        </ul>
+
+        <ul >
+            <li id="casafindname">  CasaFind</li>
+            <li class="hideOnMobile"><a href="#">Home</a>
+            <li class="hideOnMobile"><a href=" ">About us</a>
+            <li class="hideOnMobile"><a href=" ">Properties</a>
+            <li class="hideOnMobile"><a href=" ">Sing up</a> </li>
+            <li class="menubuton " onclick="showSlideBar()" ><a href="#"><i class="fa-solid fa-list"></i></a></li>
+        </ul>
+    
+     </nav>
+  <script>
+        function showSlideBar(){
+const slidebar=document.querySelector('.slidebar')
+slidebar.style.display='flex';
+        }
+        function closeSlideBar(){
+            const slidebar=document.querySelector('.slidebar')
+            slidebar.style.display='none';
+        }
+     </script>
+    
+
+
+
+
+
+        <div class="main-div">
+            <div class="left-div">
+                <h1>Find a <span>Perfect</span> Home To Live With Your Family</h1>
+                <p>Discover a modern and comfortable place where you and your family can truly feel at home. Explore carefully selected properties designed for a better lifestyle.</p>
+                <button id="btn">Explore Listings</button>
+            </div>
+
+        </div>
+
+        <div class="property-types">
+             
+<h2 id="animationh2">Property Types</h2>
+    <p id="animationp">Discover a variety of homes to suit your lifestyle – from modern apartments to cozy family houses. Explore, dream, and find your perfect space with CasaFind!</p>
+
+ 
+       </div>
+       <script>
+        $(window).scroll(function(){
+            $("#animationp").fadeIn(1000);
+
+            
+        })
+       </script>
+
+        <div class="properties">
+            
+
+        <div class="item"><a href=""><img src="../images/apartment2.webp"> <h4>Apartments</h4>  <p># properties</p></a></div>
+        <div class="item"><a href=""><img src="../images/office2.webp"> <h4>Office</h4>  <p># properties</p></a></div> 
+        <div class="item"> <a href=" "> <img src="../images/landtype.webp"><h4>Land</h4> <p># properties</p></a></div>
+        <div class="item"><a href=""><img src="../images/villa2.webp"><h4>villa</h4> <p># properties</p></a></div> 
+        <div class="item"> <a href=" "><img src="../images/studio.webp"><h4>Studio</h4>  <p># properties</p></a></div>
+        <div class="item"><a href=" "><img src="../images/garage.webp"><h4>Garage</h4></a>  <p># properties</p></div> 
+
+       </div>
+       <script>
+        $(window).scroll(function(){
+            $(".item").fadeIn(1000);
+        })
+       </script>
+  
+
+       <!-- <div class="main2aboutdiv">
+        <div class="about2div"><img src="/images/forsale3.webp"></div>
+        <div class="paragraf2about"> 
+            <h2>About Us </h2>
+                 <h3>OUR VISION AND VALUES</h3>
+                 <p>CasaFind is a modern real estate agency dedicated to 
+                    helping clients find their ideal home or investment.
+                     With a strong focus on professionalism, transparency,
+                      and trust, we provide personalized services for 
+                      buying, selling, and renting properties.
+                       
+                         At CasaFind, our mission is to connect people with spaces
+                          they can truly call home.
+                </p>
+
+        </div>
+       </div> -->
+
+       <div class="about-us">
+        <div class="aboutUsContainer">
+            <div class="aboutUs-img">
+                <img src="/images/forsale3.webp">
+            </div>
+            <div class="aboutUscontent">
+                 <h2>About Us </h2>
+                 <h3>OUR VISION AND VALUES</h3>
+                 <p>
+                    CasaFind is a modern real estate agency dedicated to 
+                    helping clients find their ideal home or investment.
+                     With a strong focus on professionalism, transparency,
+                    and trust, we provide personalized services for 
+                    buying, selling, and renting properties.   
+                    At CasaFind, our mission is to connect people with spaces
+                    they can truly call home.
+                 </p>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        $(window).scroll(function(){
+            $(".aboutUs-img ").fadeIn(1000);
+              $(".aboutUscontent").fadeIn(1000);
+
+        })
+       </script>
+      
+
+   <div class="perdoruesithyrje">
+
+     <h2>Why Us?</h2>
+         <p>We value every opinion! See what our users have shared about their experience with our services.</p></div> 
+       </div>
+
+         
+
+
+<section id="testimonials">
+<div class="container swiper">
+    <div class="slider-wrapper">
+
+        <div class="card-list swiper-wrapper">
+
+            <div class="card-item swiper-slide">
+                <img src="../images/person1.webp" class="user-image"> 
+                <h2 class="user-name">Artan Thaqi</h2>
+                <p class="user-description">“Professional service and smooth communication throughout.”</p>
+                <button class="messagebutton" onclick="showfullmessage()"> Read More</button>
+                   <div class="fullmessage">
+                <p>  CasaFind made the entire buying process clear and stress-free.
+Communication was fast, professional, and helpful from start to finish.
+I am soo happy with them!
+        </p>
+            </div>
+        
+            </div>
+         
+         
+            <div class="card-item swiper-slide">
+                <img src="../images/person2.webp" class="user-image"> 
+                <h2 class="user-name">Haqif Zymberi</h2>
+                <p class="user-description">“Great platform with reliable and high-quality listings.”</p>
+                <button class="messagebutton" onclick="showfullmessage()"> Read More</button>
+                 <div class="fullmessage">
+                <p> CasaFind helped me find the ideal property in a short time.
+The staff was supportive, knowledgeable, and always available.
+Overall, a very pleasant experience.
+
+        </p>
+            </div>
+            </div>
+            <div class="card-item swiper-slide">
+                <img src="../images/person3.webp" class="user-image"> 
+                <h2 class="user-name">Olta Zubaku</h2>
+                <p class="user-description">“Easy-to-use platform with excellent property offers.”</p>
+ <button class="messagebutton" onclick="showfullmessage()"> Read More</button>
+                   <div class="fullmessage">
+                <p> thanks to CasaFind, I found a property that perfectly matched my needs.
+The team was always ready to answer every question.
+A very positive team!
+        </p>
+            </div>            </div>
+            <div class="card-item swiper-slide">
+                <img src="../images/person4.webp" class="user-image"> 
+                <h2 class="user-name">Genc Aliu</h2>
+                <p class="user-description">“Dedicated team that made everything simple and easy.”</p>
+                 <button class="messagebutton" onclick="showfullmessage()"> Read More</button>
+                   <div class="fullmessage">
+                <p>  From the first contact to the final decision, CasaFind handled everything professionally.
+The process was smooth and well-organized.
+
+        </p>
+            </div>
+            </div>
+             <div class="card-item swiper-slide">
+                <img src="../images/person5.webp" class="user-image"> 
+                <h2 class="user-name">Esma Krasniqi</h2>
+                <p class="user-description">“Found the perfect home thanks to CasaFind.”</p>
+ <button class="messagebutton" onclick="showfullmessage()"> Read More</button>
+                   <div class="fullmessage">
+                <p>  The platform is intuitive and very easy to navigate.
+CasaFind exceeded my expectations with their customer support and quality listings.
+        </p>
+            </div>            </div>
+        
+        
+        </div>
+        <!-- te marra te gatshme prej swiper-->
+           <div class="swiper-pagination"></div>
+           <div class="swiper-button-prev"></div>
+           <div class="swiper-button-next"></div>
+          
+    </div>
+
+</div>
+
+
+                <!--linking swiper JS script-->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</section>
+<script>
+// merrni vetëm butonat brenda section-it me id="testimonials"
+const section = document.getElementById('testimonials');
+const buttons = section.querySelectorAll('.messagebutton');
+
+buttons.forEach(button => {
+    button.addEventListener('click', function(){
+        const card = button.closest('.card-item');
+        const message = card.querySelector('.fullmessage');
+        message.style.display = (message.style.display === "block") ? "none" : "block";
+    });
+});
+</script>
+<script>
+    
+    const swiper = new Swiper(".slider-wrapper", {
+  loop:true,
+  grabCursor:true,
+  spaceBetween:30,
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    slickable:true,
+    dynamicBullets:true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints:{
+    0:{
+        slidesPerView:2
+    },
+    768:{
+        slidesPerView:3
+    },
+    1024:{
+        slidesPerView:4
+    },
+  }
+  
+});
+</script>
+</script>
+
+
+    <footer>
+        <div class="mainfooter">
+            <div class="footercontent1">
+                <h3>
+                    Contact Us
+                </h3>
+                 <p><a href="mailto:realestateCasaFind@gmail.com">Email: realestateCasaFind@gmail.com</a></p>
+                 <p><a href="tel:+38345678876">Phone:+383 45 457 754</a></p>
+                 <p><a href="https://www.google.com/maps/search/?api=1&query=Bregu+i+Diellit,+Prishtinë,+Kosovë" target="_blank">Addres: Bregu i Diellit, p.n.10000 Prishtinë, Kosovë</a></p>
+
+            </div>
+            <div class="footercontent2">
+                <h3>
+                    Quick Links
+                </h3>
+                   <ul class="quicklistfooter">
+                      <li> <a href=" "> Home </a></li>
+                       <li> <a href=" "> About Us</a></li>
+                       <li><a href=" "> Properties</a></li>
+                      <li><a href=" "> Sign Up</a></li>
+                </ul>
+
+            </div>
+            <div class="footercontent3"> 
+                <h3>
+                    Follow Us
+                </h3>
+                <ul class="socialfooter1">
+                   <li><a href=" ">  <i class="fa-brands fa-facebook"></i>  </a></li>
+                   <li><a href=" "> <i class="fa-brands fa-instagram"></i>  </a></li>
+                  <li><a href=" ">  <i class="fa-brands fa-whatsapp"></i> </a></li>
+                  <li><a href=" ">  <i class="fa-brands fa-twitter"></i>  </a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+</html>
