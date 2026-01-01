@@ -10,13 +10,13 @@ async function fetchProperty() {
     const property = data.filter(data => data.id == id);
     document.title = property[0].title;
 
-    const {title, image, location, price, specifics, about, details, features, owner} = property[0];
-    generatePropertyCard(title, image, location, price, specifics, about, details, features, owner);
+    const {title, image, location, price, specifics, about, details, features, owner, rent} = property[0];
+    generatePropertyCard(title, image, location, price, specifics, about, details, features, owner, rent);
     console.log(features)
     return property[0];
 }
 
-function generatePropertyCard(title, image, location, price, specifics, about, details, features, owner) {
+function generatePropertyCard(title, image, location, price, specifics, about, details, features, owner, rent) {
     section.innerHTML =`<div class="image-div">
                             <img src=${image} alt=${title}>
                             <div>
@@ -77,7 +77,7 @@ function generatePropertyCard(title, image, location, price, specifics, about, d
                                         <p><span>Property ID</span><span>${details.propertyId}</span></p>
                                         <p><span>Property Type</span><span>${details.propertyType}</span></p>
                                         <p><span>Year Built</span><span>${details.yearBuilt}</span></p>
-                                        <p><span>Status</span><span>${details.status}</span></p>
+                                        <p><span>Status</span><span>${rent == 1 ? "For Rent" : "For Sale"}</span></p>
                                     </div>
                                 </div>
 
