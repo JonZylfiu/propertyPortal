@@ -2,10 +2,13 @@ const filter = document.getElementById("filter")
 const searchInput = document.getElementById("search-input")
 const searchForm = document.getElementById("search-form")
 const container = document.getElementById("container")
+const filterOption = document.getElementById("options-select");
 
 let DATA = [];
 let searchedData = [];
+let searchedByOptionData = [];
 let searched = false;
+let searchedByOption = false;
 
 
 searchForm.addEventListener("submit", e => {
@@ -16,20 +19,44 @@ searchForm.addEventListener("submit", e => {
 filter.addEventListener("change",() => {
     switch (filter.value) {
         case "lower-higher":
-            searched ? sort(searchedData, "asc") : sort(DATA, "asc");
+            if(searched) {
+                sortByPrice(searchedData, "asc");
+            } else if(searchedByOption) {
+                sortByPrice(searchedByOption, "asc")
+            } else {
+                sortByPrice(DATA, "asc");
+            }
             break;
         case "higher-lower":
-            searched ? sort(searchedData, "desc") : sort(DATA, "desc");
-            break;
+            if(searched) {
+                sortByPrice(searchedData, "desc");
+            } else if(searchedByOption) {
+                sortByPrice(searchedByOption, "desc")
+            } else {
+                sortByPrice(DATA, "desc");
+            }    
+        break;
     }  
+})
+
+filterOption.addEventListener("change", () => {
+    switch (filterOption.value) {
+        case "rent":
+            searched ? sortByOption(searchedData, "rent") : sortByOption(DATA, "rent");
+        break;
+        case "sale":
+            searched ? sortByOption(searchedData, "sale") : sortByOption(DATA, "sale");
+        break;
+        case "both":
+            searched ? sortByOption(searchedData, "both") : sortByOption(DATA, "both");
+        break;
+    }
 })
 
 window.addEventListener("load", async () => {
     DATA = await fetchProperties();    
     generatePropertyCards(DATA);
     filter.value = "Default";
-
-    console.log(DATA);
 })
 
 async function fetchProperties() {
@@ -40,12 +67,12 @@ async function fetchProperties() {
 
 function generatePropertyCards(data) {
     data.forEach(card => {
-        const { id, title, image, location, price, listedDate: date } = card;
-        generatePropertyCard(id, title, image, location, price, card.specifics, date);
+        const { id, title, image, location, price, listedDate: date, rent } = card;
+        generatePropertyCard(id, title, image, location, price, card.specifics, date, rent);
     })
 }
 
-function generatePropertyCard(id, title, image, location, price, specifics, date) {
+function generatePropertyCard(id, title, image, location, price, specifics, date, rent) {
     const element = document.createElement("div");
     element.classList.add("card");
     element.innerHTML =`<img src=${image} alt="" />
@@ -59,11 +86,12 @@ function generatePropertyCard(id, title, image, location, price, specifics, date
                             <span>Icon - ${specifics.parking} Parking</span>
                             <span>Icon - ${specifics.area} sqft</span>
                         </div>
-                        <p id="date">Posted: <b>${date}</b></p>
-                        <div class="view-btn">
-                            <a href="http://127.0.0.1:5500/html/PropertyPage.html?id=${id}">View</a>
+                        <div class="bottom-section">
+                            <p id="date">Posted: <b>${date}</b></p>
+                            <span>${rent == 1 ? "Rent" : "Sale"}</span>
                         </div>
-                        `;
+                        <a class="view-btn" href="http://127.0.0.1:5500/html/PropertyPage.html?id=${id}">View</a>
+                    `;
     container.appendChild(element);
 }
 
@@ -71,7 +99,7 @@ function parsePrice(priceStr) {
 return Number(priceStr.replace(/\$|,/g, '').replace(/\./g, ''));
 }
 
-function sort(data, order) {
+function sortByPrice(data, order) {
     const result = data.sort((a, b) => {
         const priceA = parsePrice(a.price)
         const priceB = parsePrice(b.price)
@@ -83,6 +111,25 @@ function sort(data, order) {
         }
     })
 
+    searched = true;
+    searchedData = result;
+    container.innerHTML = "";
+    generatePropertyCards(result);
+}
+
+function sortByOption(data, type) {
+    let result;
+
+    if(type == "rent") {
+        result =  data.filter((property) => property.rent == 1);
+    } else if(type == "sale") {
+        result = data.filter((property) => property.rent == 0);
+    } else if(type == "both") {
+        result = searched ? searchedData : DATA;
+    }
+
+    searchedByOption = true;
+    searchedByOptionData = result;
     container.innerHTML = "";
     generatePropertyCards(result);
 }

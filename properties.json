@@ -19,8 +19,7 @@
     "details": {
       "propertyId": "PROP-2024-001",
       "propertyType": "House",
-      "yearBuilt": 2020,
-      "status": "For Sale"
+      "yearBuilt": 2020
     },
     "features": [
       "Open floor plan",
@@ -34,6 +33,7 @@
       "email": "sarah.mitchell@email.com",
       "phone": "+1 (555) 123-4567"
     },
+    "rent": 0,
     "listedDate": "2025-10-12"
   },
   {
@@ -56,8 +56,7 @@
     "details": {
       "propertyId": "PROP-2024-002",
       "propertyType": "Apartment",
-      "yearBuilt": 2021,
-      "status": "For Sale"
+      "yearBuilt": 2021
     },
     "features": [
       "Rooftop access",
@@ -71,6 +70,7 @@
       "email": "james.dalton@mail.com",
       "phone": "+1 (555) 777-0022"
     },
+    "rent": 1,
     "listedDate": "2025-09-28"
   },
   {
@@ -93,8 +93,7 @@
     "details": {
       "propertyId": "PROP-2024-003",
       "propertyType": "House",
-      "yearBuilt": 2015,
-      "status": "For Sale"
+      "yearBuilt": 2015
     },
     "features": [
       "Large backyard",
@@ -108,6 +107,7 @@
       "email": "amy.rogers@mail.com",
       "phone": "+1 (555) 402-9911"
     },
+    "rent": 0,
     "listedDate": "2025-11-05"
   },
   {
@@ -130,8 +130,7 @@
     "details": {
       "propertyId": "PROP-2024-004",
       "propertyType": "Loft",
-      "yearBuilt": 2019,
-      "status": "For Sale"
+      "yearBuilt": 2019
     },
     "features": [
       "Exposed brick",
@@ -145,6 +144,7 @@
       "email": "tom.morgan@mail.com",
       "phone": "+1 (555) 800-2211"
     },
+    "rent": 1,
     "listedDate": "2025-10-20"
   },
   {
@@ -167,8 +167,7 @@
     "details": {
       "propertyId": "PROP-2024-005",
       "propertyType": "Villa",
-      "yearBuilt": 2010,
-      "status": "For Sale"
+      "yearBuilt": 2010
     },
     "features": [
       "Stone fireplace",
@@ -182,6 +181,7 @@
       "email": "karen.lewis@mail.com",
       "phone": "+1 (555) 210-9933"
     },
+    "rent": 0,
     "listedDate": "2025-08-30"
   },
   {
@@ -204,8 +204,7 @@
     "details": {
       "propertyId": "PROP-2024-006",
       "propertyType": "Apartment",
-      "yearBuilt": 2022,
-      "status": "For Sale"
+      "yearBuilt": 2022
     },
     "features": [
       "Balcony",
@@ -219,6 +218,7 @@
       "email": "rachel.park@mail.com",
       "phone": "+1 (555) 712-8899"
     },
+    "rent": 0,
     "listedDate": "2025-11-18"
   },
   {
@@ -241,8 +241,7 @@
     "details": {
       "propertyId": "PROP-2024-007",
       "propertyType": "House",
-      "yearBuilt": 2023,
-      "status": "For Sale"
+      "yearBuilt": 2023
     },
     "features": [
       "Smart climate control",
@@ -256,6 +255,7 @@
       "email": "brian.lee@mail.com",
       "phone": "+1 (555) 998-4433"
     },
+    "rent": 1,
     "listedDate": "2025-12-02"
   },
   {
@@ -278,8 +278,7 @@
     "details": {
       "propertyId": "PROP-2024-008",
       "propertyType": "Cabin",
-      "yearBuilt": 2018,
-      "status": "For Sale"
+      "yearBuilt": 2018
     },
     "features": [
       "Fireplace",
@@ -293,6 +292,7 @@
       "email": "ethan.miles@mail.com",
       "phone": "+1 (555) 331-2233"
     },
+    "rent": 0,
     "listedDate": "2025-09-15"
   },
   {
@@ -315,8 +315,7 @@
     "details": {
       "propertyId": "PROP-2024-009",
       "propertyType": "Studio",
-      "yearBuilt": 2020,
-      "status": "For Sale"
+      "yearBuilt": 2020
     },
     "features": [
       "Balcony",
@@ -330,6 +329,7 @@
       "email": "chloe.scott@mail.com",
       "phone": "+1 (555) 222-1199"
     },
+    "rent": 0,
     "listedDate": "2025-10-08"
   },
   {
@@ -352,8 +352,7 @@
     "details": {
       "propertyId": "PROP-2024-010",
       "propertyType": "Duplex",
-      "yearBuilt": 2014,
-      "status": "For Sale"
+      "yearBuilt": 2014
     },
     "features": [
       "Two separate units",
@@ -367,6 +366,7 @@
       "email": "nina.howard@mail.com",
       "phone": "+1 (555) 500-8877"
     },
+    "rent": 1,
     "listedDate": "2025-11-22"
   }
 ]   
