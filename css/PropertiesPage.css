@@ -2,6 +2,7 @@
 
 * {
     font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
 }
 
 .page #header-page {
@@ -156,10 +157,21 @@
     color: var(--color-accent);
 }
 
+.location {
+    text-align: start;
+}
+
 .page section div:last-child .card .card-specs {
     height: 50px;
     padding: 0;
     margin-top: 15px;
+}
+
+.page section div:last-child .card .card-specs span {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    margin-left: 10px;
 }
 
 .page section div:last-child .card img {

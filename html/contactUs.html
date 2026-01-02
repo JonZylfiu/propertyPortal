@@ -14,39 +14,7 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 </head>
 <body>
 
-
-     <nav class="navbar">
-         <ul class="slidebar">
-           <li onclick=closeSlideBar()><a href="#"><i class="fa-solid fa-x"></i></a></li>
-
-            <li><a href="homePage.html">Home</a></li>
-            <li><a href="PropertiesPage.html">Properties</a></li>
-            <li><a href="contactUs.html">Contact Us</a> </li>
-        </ul>
-
-        <ul class="navbarLeft">
-             <li id="casafindname">  CasaFind</li>
-
-        </ul>
-        <ul class="navbarRight">
-            <li class="hideOnMobile"><a href="homePage.html">Home</a></li>
-            <li class="hideOnMobile"><a href="PropertiesPage.html">Properties</a></li>
-            <li class="hideOnMobile"><a href="contactUs.html"></a>Contact Us</li>
-            <li class="menubuton " onclick="showSlideBar()" ><a href="#"><i class="fa-solid fa-list"></i></a></li>
-        </ul>
-    
-     </nav>
-   <script>
-        function showSlideBar(){
-const slidebar=document.querySelector('.slidebar')
-slidebar.style.display='flex';
-        }
-        function closeSlideBar(){
-            const slidebar=document.querySelector('.slidebar')
-            slidebar.style.display='none';
-        }
-     </script> 
-
+    <div id="navbar-placeholder"></div>
 
     <section class="contactUs">
 
@@ -127,4 +95,5 @@ slidebar.style.display='flex';
     </footer>
    
 </body>
+<script src="../js/fetchNav.js"></script>
 </html>
