@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="/css/PropertiesPage.css">
 </head>
 <body>
-    <div style="height: 200px; width: 100%; background-color: blue;">
-    </div>
-
+    <div id="navbar-placeholder"></div>
     <div class="page">
         <div id="header-page">
             <h3>Find Your Dream Property</h3>
@@ -22,14 +20,21 @@
         <section>
             <div class="filter-div">
                 <p>Showing (10) properties</p>
-                
-                <select id="filter">
-                    <option value="Default" selected>Default</option>
-                    <option value="lower-higher">Price: Lower → Higher</option>
-                    <option value="higher-lower">Price: Higher → Lower</option>
-                </select>
+                <div>                
+                    <select id="filter">
+                        <option value="Default" selected>Default</option>
+                        <option value="lower-higher">Price: Lower → Higher</option>
+                        <option value="higher-lower">Price: Higher → Lower</option>
+                    </select>
+                    <select id="options-select">
+                        <option value="both" selected>Rent&Sale</option>
+                        <option value="rent">Rent</option>
+                        <option value="sale">Sale</option>
+                    </select>
+                </div>
             </div>
             <div id="container">
+
             </div>
         </section>
         <div class="pagination">
@@ -43,8 +48,7 @@
         </div>
     </div>
 
-    <div style="height: 200px; width: 100%; background-color: blue; margin-top: 200px;">
-    </div>
 </body>
+<script src="../js/fetchNav.js"></script>
 <script src="../js/PropertiesPage.js"></script>
 </html>

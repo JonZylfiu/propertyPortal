@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+
+
+}
+.navbar{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#fff;
+    
+}
+.navbarLeft .navbarRight{
+    list-style: none;
+    margin:0;
+    padding: 0;
+    display: flex;
+    
+
+}
+.navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap:30px;
+    align-items:center ;
+    padding: 20px;
+}
+.navbar li{
+    display: inline-block;
+}
+.navbar a{
+    text-decoration: none;
+    color:#fff;
+}
+#casafindname{
+    justify-content: flex-start;
+}
+
+
+.navbar a:hover{
+    font-weight:  bold;
+}
+
+
+.navbar .slidebar{
+    position: fixed;
+    top:0;
+    right:0;
+    height:315px;
+    width:200px;
+    padding-top: 10px;
+    z-index:999;
+    background-color: rgba(166, 147, 136, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px  rgba(0, 0, 0, 0.50);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:20px;
+    display: none;
+}
+
+.menubuton{
+    display: none !important;
+
+}
+
+.slidebar li{
+    width:100px;
+    list-style: none;
+    padding-bottom: 20px;
+    flex-direction: column;
+    padding-left: 5px;
+    
+    
+
+}.slidebar a{
+    width:100%;
+}
+
+@media (max-width:768px){
+.hideOnMobile{
+    display: none !important;
+}
+.menubuton{
+    display: block !important;
+}
+
+} 
+
+
+
+
+
+
+
+
+
+
+.contactUs{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactHero{
+    position: relative;
+    width: 100%;
+    padding:0 ;
+    box-sizing: border-box;
+}
+.contactHero img{
+    width:100%;
+    object-fit: cover;
+    filter: blur(2.5px) brightness(0.7);
+    position: relative;
+}
+
+.HeroMessage{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    
+}
+.HeroMessage h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.contactForm{
+    display: grid;
+    grid-template-columns: 1.2fr 1.8fr;
+    gap:20px;
+    background-color:#D7CFC7;
+    padding:30px;
+}
+.fullnameForm{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap:20px;
+}
+
+
+.formContainer{
+  font-size: 19px;
+}
+form{
+    display: grid;
+    gap:12px;
+    border-radius: 15px;
+    
+}
+form input, select{
+    padding:15px;
+    border-radius: 15px;
+    
+}
+form textarea{
+    padding: 25px 25px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+form button{
+    border-radius: 15px;
+    padding:12px 15px;
+    border: none;
+    background-color: #4F3D37;
+    color: white ;
+}
+.border{
+    border: 2px solid #4F3D37;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.border:hover{
+    background-color: #f0e9e3;
+}form button:hover{
+    background-color: #716354;
+}
+
+@media(max-width:750px){
+    .contactForm{
+        grid-template-columns: 1fr;
+        gap:30px;
+    }
+}
+
+.contactEmail{
+    margin-top: 5px;
+    height:38vh;
+    background-color: #D7CFC7;
+  
+}
+.underContactUs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    top:50%;
+    left:50%;
+    padding:100px;
+
+}
+.underContactUs a{
+    text-decoration: none;
+    color: black;
+}
+.underContactUs a:hover{
+    color: #a69388;
+
+}
+
+footer{
+    background-color: #D7CFC7;
+    padding: 30px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    gap:30px;
+    padding-bottom: 50px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+footer i{
+    padding: 6px;
+    font-size: 25px;
+}
+footer a{
+    text-decoration: none;
+    color:inherit;    
+}
+.addressFooter a{
+    list-style-type: none;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #a69388;
+}
+

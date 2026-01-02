@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/rekomandimet.css">
+</head>
+<body>
+        <div class="profile-tab">
+            <img class="current-user-img" src="/avatars/image-maxblagun.png" alt="My profile">
+            <div class="current-user">
+                <h1>Costumer Recommendation</h1>
+                <p class="current-username"><a href="">Share your thoughts & recommendations</a></p>
+            </div>
+        </div>
+
+        <div class="c-add-comment">
+            <img src="/avatars/image-maxblagun.png" alt="Max Blagun">
+            <div class="type-your-comment">
+                <textarea name="new comment" id="comment-text" class="new-comment-text" placeholder="Share your thoughts..."></textarea>
+                <button class="submit-btn" id="submit-btn"  >Post Comment</button>
+            </div>
+        </div>
+
+        
+
+        <div class="comments">
+
+            <main class="new-comments-section">
+            </main>
+
+            <div id="comment">
+                <img src="/avatars/image-maxblagun.png" alt="profile picture">
+                <div class="comment-structure">
+                    <div class="data">
+                        <p id="tx1">Max Blagun</p>
+                        <p id="tx2"> 1 d ago</p>
+                    </div>
+                    <div class="comment-text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Cumque iusto atque nulla natus, nobis, odio officiis repudiandae ab rerum eligendi mollitia. 
+                            Iusto perspiciatis quos libero eligendi voluptate, numquam maiores dolor!
+                        </p> 
+                    </div>
+
+                    <div class="reactions">
+                        <!-- like -->
+                        <div class="like">
+                            <button class="like-btn" id="like" onclick="addEventListener();">
+                                <svg class="icon" onclick="this.classList.toggle('active')" viewBox="0 0 24 24">
+                                    <path d="M2 21h4V9H2v12zm20-11c0-1.1-.9-2-2-2h-6.3l.95-4.6.03-.32c0-.41-.17-.79-.44-1.06L13 1 6.6 7.4C6.22 7.78 6 8.3 6 8.83V19c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V10z"/>
+                                </svg>
+                            </button>
+                            <p id="num" class="num-likes"></p>
+                        </div>
+                        <!-- dislike -->
+                        <div class="dislike">
+                            <button class="dislike-btn" id="dislike" onclick="addEventListener();">
+                                <svg class="icon" onclick="this.classList.toggle('active')" viewBox="0 0 24 24">
+                                    <path d="M22 3h-4v12h4V3zM2 14c0 1.1.9 2 2 2h6.3l-.95 4.6-.03.32c0 .41.17.79.44 1.06L11 23l6.4-6.4c.38-.38.6-.9.6-1.43V5c0-1.1-.9-2-2-2H7c-.83 0-1.54.5-1.84 1.22L2.14 11.27c-.09.23-.14.47-.14.73V14z"/>
+                                </svg>
+                            </button>
+                            <p id="num" class="num-dislikes"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="comment">
+                <img src="/avatars/image-amyrobson.png" alt="profile picture">
+                <div class="comment-structure">
+                    <div class="data">
+                        <p id="tx1">Amy Robson</p>
+                        <p id="tx2"> 5 d ago</p>
+                    </div>
+                    <div class="comment-text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Nemo optio dolorem facere accusamus. Consequatur expedita voluptate ipsa aut itaque. 
+                            Maiores eos repellat eligendi ut culpa provident ex consequatur necessitatibus quisquam!
+                        </p>
+                    </div>
+
+                    <div class="reactions">
+                        <div class="like">
+                            <button class="like-btn" id="like" onclick="addEventListener();">
+                                <svg class="icon" onclick="this.classList.toggle('active')" viewBox="0 0 24 24">
+                                    <path d="M2 21h4V9H2v12zm20-11c0-1.1-.9-2-2-2h-6.3l.95-4.6.03-.32c0-.41-.17-.79-.44-1.06L13 1 6.6 7.4C6.22 7.78 6 8.3 6 8.83V19c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V10z"/>
+                                </svg>
+                            </button>
+                            <p class="num-likes"></p>
+                        </div>
+                        <div class="dislike">
+                            <button class="dislike-btn" onclick="addEventListener();">
+                                <svg class="icon" id="active" viewBox="0 0 24 24">
+                                    <path d="M22 3h-4v12h4V3zM2 14c0 1.1.9 2 2 2h6.3l-.95 4.6-.03.32c0 .41.17.79.44 1.06L11 23l6.4-6.4c.38-.38.6-.9.6-1.43V5c0-1.1-.9-2-2-2H7c-.83 0-1.54.5-1.84 1.22L2.14 11.27c-.09.23-.14.47-.14.73V14z"/>
+                                </svg>
+                            </button>
+                            <p class="num-dislikes"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="comment">
+                <img src="/avatars/image-ramsesmiron.png" alt="profile picture">
+                <div class="comment-structure">
+                    <div class="data">
+                        <p id="tx1">Ramses Miron</p>
+                        <p id="tx2">10 d ago</p>
+                    </div>
+                    <div class="comment-text">
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Fugit inventore omnis architecto porro ratione nam dolorum tempora assumenda ipsum, dignissimos, 
+                        error iste asperiores? Ipsa reprehenderit provident corporis porro nulla deserunt?
+                        </p>
+                    </div>
+                    <div class="reactions">
+                        <div class="like">
+                            <button class="like-btn" id="like" onclick="addEventListener();">
+                                <svg class="icon" onclick="this.classList.toggle('active')" viewBox="0 0 24 24">
+                                    <path d="M2 21h4V9H2v12zm20-11c0-1.1-.9-2-2-2h-6.3l.95-4.6.03-.32c0-.41-.17-.79-.44-1.06L13 1 6.6 7.4C6.22 7.78 6 8.3 6 8.83V19c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V10z"/>
+                                </svg>
+                                </button>
+                            <p class="num-likes"></p>
+                        </div>
+                        <div class="dislike">
+                            <button class="dislike-btn" id="dislike" onclick="addEventListener();">
+                                <svg class="icon" onclick="this.classList.toggle('active')" viewBox="0 0 24 24">
+                                    <path d="M22 3h-4v12h4V3zM2 14c0 1.1.9 2 2 2h6.3l-.95 4.6-.03.32c0 .41.17.79.44 1.06L11 23l6.4-6.4c.38-.38.6-.9.6-1.43V5c0-1.1-.9-2-2-2H7c-.83 0-1.54.5-1.84 1.22L2.14 11.27c-.09.23-.14.47-.14.73V14z"/>
+                                </svg>
+                            </button>
+                            <p class="num-dislikes"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <template id="template-new-comment">
+                <div id="comment">
+                <img src="/avatars/image-maxblagun.png" alt="profile picture">
+                <div class="comment-structure">
+                    <div class="data">
+                        <p id="tx1">Max Blagun</p>
+                        <p id="tx2" class="comment-time"></p>
+                    </div>
+                    <div class="comment-text">
+                        <p class="recent-comment"></p>
+                    </div>
+                    <div class="reactions">
+                        <div class="like">
+                            <button class="like-btn" id="like" onclick="addEventListener();">
+                                <svg class="icon" onclick="this.classList.toggle('active')" viewBox="0 0 24 24">
+                                    <path d="M2 21h4V9H2v12zm20-11c0-1.1-.9-2-2-2h-6.3l.95-4.6.03-.32c0-.41-.17-.79-.44-1.06L13 1 6.6 7.4C6.22 7.78 6 8.3 6 8.83V19c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V10z"/>
+                                </svg>
+                                </button>
+                            <p class="num-likes"> </p>
+                        </div>
+                        <div class="dislike">
+                            <button class="dislike-btn" id="dislike" onclick="addEventListener();">
+                                <svg class="icon" onclick="this.classList.toggle('active')" viewBox="0 0 24 24">
+                                    <path d="M22 3h-4v12h4V3zM2 14c0 1.1.9 2 2 2h6.3l-.95 4.6-.03.32c0 .41.17.79.44 1.06L11 23l6.4-6.4c.38-.38.6-.9.6-1.43V5c0-1.1-.9-2-2-2H7c-.83 0-1.54.5-1.84 1.22L2.14 11.27c-.09.23-.14.47-.14.73V14z"/>
+                                </svg>
+                            </button>
+                            <p class="num-dislikes"> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </template>
+
+        </div>
+
+        <div class="c-btn-showComments">
+                <button class="btn-showComment"  >Show more &darr; </button>
+        </div>
+
+        <script src="/js/rekomandimet.js"></script>
+    
+</body>
+</html>

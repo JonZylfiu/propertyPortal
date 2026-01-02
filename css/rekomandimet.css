@@ -1,0 +1,338 @@
+@import "main.css";
+body{
+    background-color: #F5F1EC;
+}
+p, h1, h2, h3,a{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    background-color: var(--color-bg);
+}
+
+/* profili */
+.comments{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-left: 14rem;
+    margin-right: 14rem;
+}
+.profile-tab{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+    gap: 15px;
+    margin-top: 2rem;
+}
+/* profili */
+
+/* shtimi i komentit */
+.c-add-comment{
+    display: grid;
+    grid-template-columns: 70px auto;
+    height: 200px;
+    border-radius: 10px;
+    gap: 5px;
+    padding: 20px;
+    margin-top: 2rem;
+    margin-left: 14rem;
+    margin-right: 14rem;
+    margin-bottom: 2rem;
+    background-color: var(--color-white);
+}
+.type-your-comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.new-comment-text{
+    height: 60%;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 12px;
+    position: relative;
+    resize: none;
+    background-color: var(--color-bg);
+}
+.submit-btn{
+    width: 120px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.submit-btn:hover{
+    background-color: var(--color-dark);
+    transition: 0.3s;
+}
+/* shtimi i komentit */
+
+/* komentet */
+.main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#comment{
+    display: grid;
+    grid-template-columns: 70px auto;
+    gap: 10px;
+    min-width: 40px;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 2rem;
+}
+
+.comment-text {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  min-width: 0;
+}
+
+.comment-structure{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.data{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+#tx1 {
+    font-size: 110%;
+    font-weight: 700;
+    transition: 3ms;
+}
+
+#tx1:hover{
+    color: #007bff;
+    cursor: pointer;
+}
+
+.reactions, .like, .dislike{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.reactions{
+    gap: 20px;
+}
+
+/* komentet */
+
+/* reactions */
+.like, .dislike{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.like-btn, .dislike-btn{
+    margin: 2px;
+    padding: 2px;
+    border: none;
+    border-radius: 5px;
+    color: var(--color-white);
+    background-color: var(--color-accent);
+    width: 50px;
+    height: 25px;
+    transition: 1ms;
+}
+.like-btn:hover, .dislike-btn:hover{
+    background-color: var(--color-dark);
+    transform: scale(1.1);
+    transition: 1ms;
+}
+
+.like-btn:active, .dislike-btn:active{
+    background-color: var(--color-dark);
+}
+
+.icon {
+    width: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.like-btn, .dislike-btn{
+    fill: var(--color-white);
+}
+.icon:hover {
+    transform: scale(1.1);
+}
+/* reactions */
+
+
+/* Tablets (≤ 1024px) */
+@media (max-width: 1024px) {
+    .comments,
+    .c-add-comment {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    #comment {
+        grid-template-columns: 60px auto;
+    }
+}
+
+/* Phones & small devices (≤ 768px) */
+@media (max-width: 768px) {
+
+    /* Global spacing */
+    .comments,
+    .c-add-comment {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    /* Profile section */
+    .profile-tab {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    /* Add comment box */
+    .c-add-comment {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 15px;
+    }
+
+    .new-comment-text {
+        height: 120px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        height: 40px;
+    }
+
+    /* Comments */
+    #comment {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .data {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    /* Reactions */
+    .reactions {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .like-btn,
+    .dislike-btn {
+        width: 60px;
+        height: 30px;
+    }
+}
+
+/* Very small phones (≤ 480px) */
+@media (max-width: 480px) {
+
+    p, h1, h2, h3, a {
+        font-size: 95%;
+    }
+
+    .icon {
+        width: 18px;
+    }
+
+    .like-btn,
+    .dislike-btn {
+        width: 100%;
+    }
+}
+
+/* Ultra small phones (≤ 300px) */
+@media (max-width: 300px) {
+
+    /* Spacing maksimal i kursyer */
+    .comments,
+    .c-add-comment {
+        margin-left: 4px;
+        margin-right: 4px;
+        padding: 8px;
+    }
+
+    /* Profile tab */
+    .profile-tab {
+        gap: 8px;
+        text-align: center;
+    }
+
+    /* Add comment */
+    .c-add-comment {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .new-comment-text {
+        height: 90px;
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        height: 34px;
+        font-size: 12px;
+    }
+
+    /* Comment card */
+    #comment {
+        padding: 8px;
+        gap: 8px;
+    }
+
+    /* Data row */
+    .data {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    /* Reactions */
+    .reactions {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .like-btn,
+    .dislike-btn {
+        width: 100%;
+        height: 26px;
+        font-size: 11px;
+    }
+
+    .icon {
+        width: 16px;
+    }
+
+    p, h1, h2, h3, a {
+        font-size: 90%;
+    }
+}
+
+

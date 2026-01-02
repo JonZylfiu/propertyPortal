@@ -1,92 +1,372 @@
 [
   {
     "id": 1,
-    "title": "Modern Luxury Villa",
-    "image": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0",
-    "location": "Pristina, Kosova",
-    "price": "$850.000",
-    "specifics": [4, 3, 3200],
-    "date": "15/03/2024"
+    "title": "Modern Family House",
+    "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80",
+    "location": {
+      "street": "12 Kopernice Street",
+      "city": "Kamenice",
+      "country": "Kosove"
+    },
+    "price": "250,000.000",
+    "specifics": {
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "area": 2500,
+      "parking": 2
+    },
+    "about": "A modern home with open floor plan and high-end finishes...",
+    "details": {
+      "propertyId": "PROP-2024-001",
+      "propertyType": "House",
+      "yearBuilt": 2020
+    },
+    "features": [
+      "Open floor plan",
+      "Smart home system",
+      "Landscaped backyard"
+    ],
+    "owner": {
+      "initials": "SM",
+      "name": "Sarah Mitchell",
+      "bio": "Licensed Real Estate Agent with 15 years of experience.",
+      "email": "sarah.mitchell@email.com",
+      "phone": "+1 (555) 123-4567"
+    },
+    "rent": 0,
+    "listedDate": "2025-10-12"
   },
   {
     "id": 2,
-    "title": "Cozy Urban Apartment",
-    "image": "https://images.unsplash.com/photo-1580584123752-4f8e58c9f1a7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0",
-    "location": "Tirana, Albania",
-    "price": "$320.000",
-    "specifics": [2, 2, 1200],
-    "date": "22/07/2024"
+    "title": "Luxury Penthouse Suite",
+    "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80",
+    "location": {
+      "street": "88 Skyline Avenue",
+      "city": "Prishtina",
+      "country": "Kosove"
+    },
+    "price": "610,000.000",
+    "specifics": {
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "area": 1800,
+      "parking": 1
+    },
+    "about": "A breathtaking penthouse offering panoramic city views...",
+    "details": {
+      "propertyId": "PROP-2024-002",
+      "propertyType": "Apartment",
+      "yearBuilt": 2021
+    },
+    "features": [
+      "Rooftop access",
+      "Private elevator",
+      "Floor-to-ceiling windows"
+    ],
+    "owner": {
+      "initials": "JD",
+      "name": "James Dalton",
+      "bio": "High-end real estate specialist.",
+      "email": "james.dalton@mail.com",
+      "phone": "+1 (555) 777-0022"
+    },
+    "rent": 1,
+    "listedDate": "2025-09-28"
   },
   {
     "id": 3,
-    "title": "Beachside Modern House",
-    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0",
-    "location": "Durres, Albania",
-    "price": "$1.200.000",
-    "specifics": [5, 4, 4000],
-    "date": "05/11/2024"
+    "title": "Cozy Suburban Home",
+    "image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80",
+    "location": {
+      "street": "45 Willow Lane",
+      "city": "Ferizaj",
+      "country": "Kosove"
+    },
+    "price": "190,000.000",
+    "specifics": {
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "area": 1600,
+      "parking": 1
+    },
+    "about": "Perfect starter home in a quiet suburb...",
+    "details": {
+      "propertyId": "PROP-2024-003",
+      "propertyType": "House",
+      "yearBuilt": 2015
+    },
+    "features": [
+      "Large backyard",
+      "Updated kitchen",
+      "Wood flooring"
+    ],
+    "owner": {
+      "initials": "AR",
+      "name": "Amy Rogers",
+      "bio": "Friendly and detail-oriented property agent.",
+      "email": "amy.rogers@mail.com",
+      "phone": "+1 (555) 402-9911"
+    },
+    "rent": 0,
+    "listedDate": "2025-11-05"
   },
   {
     "id": 4,
-    "title": "Mountain View Cabin",
-    "image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0",
-    "location": "Peja, Kosova",
-    "price": "$450.000",
-    "specifics": [3, 2, 1800],
-    "date": "01/01/2025"
+    "title": "Downtown Loft",
+    "image": "https://images.unsplash.com/photo-1523217582562-09d0def993a6?q=80",
+    "location": {
+      "street": "210 Market Street",
+      "city": "Prizren",
+      "country": "Kosove"
+    },
+    "price": "275,000.000",
+    "specifics": {
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "area": 1100,
+      "parking": 0
+    },
+    "about": "A stylish downtown loft perfect for young professionals...",
+    "details": {
+      "propertyId": "PROP-2024-004",
+      "propertyType": "Loft",
+      "yearBuilt": 2019
+    },
+    "features": [
+      "Exposed brick",
+      "High ceilings",
+      "City view"
+    ],
+    "owner": {
+      "initials": "TM",
+      "name": "Tom Morgan",
+      "bio": "Urban living real estate consultant.",
+      "email": "tom.morgan@mail.com",
+      "phone": "+1 (555) 800-2211"
+    },
+    "rent": 1,
+    "listedDate": "2025-10-20"
   },
   {
     "id": 5,
-    "title": "Downtown Penthouse",
-    "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0",
-    "location": "Pristina, Kosova",
-    "price": "$950.000",
-    "specifics": [3, 3, 2100],
-    "date": "14/02/2025"
+    "title": "Rustic Country Villa",
+    "image": "https://images.unsplash.com/photo-1475856034135-1a9d7a1ad3cf?q=80",
+    "location": {
+      "street": "7 Old Oak Road",
+      "city": "Gjakove",
+      "country": "Kosove"
+    },
+    "price": "330,000.000",
+    "specifics": {
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "area": 3200,
+      "parking": 3
+    },
+    "about": "A charming villa surrounded by nature...",
+    "details": {
+      "propertyId": "PROP-2024-005",
+      "propertyType": "Villa",
+      "yearBuilt": 2010
+    },
+    "features": [
+      "Stone fireplace",
+      "Garden",
+      "Terrace"
+    ],
+    "owner": {
+      "initials": "KL",
+      "name": "Karen Lewis",
+      "bio": "Expert in countryside luxury properties.",
+      "email": "karen.lewis@mail.com",
+      "phone": "+1 (555) 210-9933"
+    },
+    "rent": 0,
+    "listedDate": "2025-08-30"
   },
   {
     "id": 6,
-    "title": "Suburban Family Home",
-    "image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0",
-    "location": "Gjilan, Kosova",
-    "price": "$550.000",
-    "specifics": [4, 2, 2500],
-    "date": "30/04/2025"
+    "title": "Beachfront Apartment",
+    "image": "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80",
+    "location": {
+      "street": "5 Horizon Walk",
+      "city": "Durres",
+      "country": "Albania"
+    },
+    "price": "420,000.000",
+    "specifics": {
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "area": 1300,
+      "parking": 1
+    },
+    "about": "Wake up to ocean views every morning...",
+    "details": {
+      "propertyId": "PROP-2024-006",
+      "propertyType": "Apartment",
+      "yearBuilt": 2022
+    },
+    "features": [
+      "Balcony",
+      "Sea view",
+      "Modern interior"
+    ],
+    "owner": {
+      "initials": "RP",
+      "name": "Rachel Park",
+      "bio": "Seaside real estate specialist.",
+      "email": "rachel.park@mail.com",
+      "phone": "+1 (555) 712-8899"
+    },
+    "rent": 0,
+    "listedDate": "2025-11-18"
   },
   {
     "id": 7,
-    "title": "Modern Studio Apartment",
-    "image": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0",
-    "location": "Tirana, Albania",
-    "price": "$180.000",
-    "specifics": [1, 1, 600],
-    "date": "13/05/2025"
+    "title": "Minimalist Smart Home",
+    "image": "https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80",
+    "location": {
+      "street": "300 Techline Drive",
+      "city": "Tirane",
+      "country": "Albania"
+    },
+    "price": "470,000.000",
+    "specifics": {
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "area": 2400,
+      "parking": 2
+    },
+    "about": "A fully automated smart home with minimalist design...",
+    "details": {
+      "propertyId": "PROP-2024-007",
+      "propertyType": "House",
+      "yearBuilt": 2023
+    },
+    "features": [
+      "Smart climate control",
+      "Security system",
+      "LED ambient lighting"
+    ],
+    "owner": {
+      "initials": "BL",
+      "name": "Brian Lee",
+      "bio": "Smart home systems expert.",
+      "email": "brian.lee@mail.com",
+      "phone": "+1 (555) 998-4433"
+    },
+    "rent": 1,
+    "listedDate": "2025-12-02"
   },
   {
     "id": 8,
-    "title": "Luxury Beach Villa",
-    "image": "https://images.unsplash.com/photo-1556911073-52527ac437f4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0",
-    "location": "Saranda, Albania",
-    "price": "$1.500.000",
-    "specifics": [6, 5, 5000],
-    "date": "18/08/2025"
+    "title": "Mountain Cabin Retreat",
+    "image": "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?q=80",
+    "location": {
+      "street": "99 Pine Hill Road",
+      "city": "Peje",
+      "country": "Kosove"
+    },
+    "price": "210,000.000",
+    "specifics": {
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "area": 1200,
+      "parking": 1
+    },
+    "about": "A peaceful cabin in the mountains...",
+    "details": {
+      "propertyId": "PROP-2024-008",
+      "propertyType": "Cabin",
+      "yearBuilt": 2018
+    },
+    "features": [
+      "Fireplace",
+      "Mountain view",
+      "Wooden interior"
+    ],
+    "owner": {
+      "initials": "EM",
+      "name": "Ethan Miles",
+      "bio": "Mountain and rural property agent.",
+      "email": "ethan.miles@mail.com",
+      "phone": "+1 (555) 331-2233"
+    },
+    "rent": 0,
+    "listedDate": "2025-09-15"
   },
   {
     "id": 9,
-    "title": "Historic Townhouse",
-    "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0",
-    "location": "Prizren, Kosova",
-    "price": "$620.000",
-    "specifics": [3, 2, 2000],
-    "date": "09/09/2025"
+    "title": "Urban Studio Apartment",
+    "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80",
+    "location": {
+      "street": "44 Grand Boulevard",
+      "city": "Tirane",
+      "country": "Albania"
+    },
+    "price": "145,000.000",
+    "specifics": {
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "area": 650,
+      "parking": 0
+    },
+    "about": "Compact and modern studio in the heart of the city...",
+    "details": {
+      "propertyId": "PROP-2024-009",
+      "propertyType": "Studio",
+      "yearBuilt": 2020
+    },
+    "features": [
+      "Balcony",
+      "Modern kitchen",
+      "City access"
+    ],
+    "owner": {
+      "initials": "CS",
+      "name": "Chloe Scott",
+      "bio": "Studio and small-space real estate expert.",
+      "email": "chloe.scott@mail.com",
+      "phone": "+1 (555) 222-1199"
+    },
+    "rent": 0,
+    "listedDate": "2025-10-08"
   },
   {
     "id": 10,
-    "title": "Country Estate",
-    "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0",
-    "location": "Ferizaj, Kosova",
-    "price": "$1.100.000",
-    "specifics": [5, 4, 4500],
-    "date": "25/12/2025"
+    "title": "Large Multi-Unit Duplex",
+    "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80",
+    "location": {
+      "street": "180 Maple Ridge Street",
+      "city": "Mitrovice",
+      "country": "Kosove"
+    },
+    "price": "360,000.000",
+    "specifics": {
+      "bedrooms": 6,
+      "bathrooms": 4,
+      "area": 3500,
+      "parking": 2
+    },
+    "about": "A spacious duplex ideal for investment or large families...",
+    "details": {
+      "propertyId": "PROP-2024-010",
+      "propertyType": "Duplex",
+      "yearBuilt": 2014
+    },
+    "features": [
+      "Two separate units",
+      "Private backyard",
+      "Modern bathrooms"
+    ],
+    "owner": {
+      "initials": "NH",
+      "name": "Nina Howard",
+      "bio": "Investment property consultant.",
+      "email": "nina.howard@mail.com",
+      "phone": "+1 (555) 500-8877"
+    },
+    "rent": 1,
+    "listedDate": "2025-11-22"
   }
-]
+]   
