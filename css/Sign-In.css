@@ -259,3 +259,130 @@ button.ghost {
 .field.error-active .error {
     visibility: visible;
 }
+@media (max-width: 1024px) {
+
+    .container {
+        width: 90%;
+        min-height: 600px;
+    }
+
+    form {
+        padding: 0 30px;
+    }
+
+    .overlay-panel h1 {
+        font-size: 22px;
+    }
+
+    .overlay-panel p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+
+    .login-wrapper {
+        padding: 20px 10px;
+    }
+
+    .container {
+        width: 100%;
+        min-height: auto;
+        border-radius: 12px;
+    }
+
+    .form-container {
+        width: 100%;
+        position: relative;
+        transform: none !important;
+        opacity: 1 !important;
+    }
+
+    .sign-in-container,
+    .sign-up-container {
+        position: relative;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .overlay-container {
+        display: none;
+    }
+
+    form {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px;
+        margin-top: 10px;
+    }
+
+    .role-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .role-buttons label {
+        width: 100%;
+    }
+
+    .forgot-password {
+        text-align: center;
+        display: block;
+    }
+}
+@media (max-width: 768px) {
+
+  .sign-up-container {
+    display: none;
+  }
+
+  .container.right-panel-active .sign-up-container {
+    display: block;
+  }
+
+  .container.right-panel-active .sign-in-container {
+    display: none;
+  }
+
+}@media (max-width: 768px) {
+
+  
+  .mobile-arrow {
+    position: absolute;
+    right: 16px;          
+    bottom: 90px;        
+    left: auto;
+    transform: none;
+    font-size: 20px;
+    background: #4b3a33;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    user-select: none;
+  }
+
+  .container.right-panel-active .mobile-arrow {
+  right: 16px;          
+  left: auto;
+  bottom: 78px;         
+  transform: rotate(180deg);
+}
+}
