@@ -62,3 +62,8 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
 
     if (!valid) e.preventDefault();
 });
+const mobileToggle = document.getElementById("mobileToggle");
+
+    mobileToggle.addEventListener("click", () => {
+    container.classList.toggle("right-panel-active");
+});
