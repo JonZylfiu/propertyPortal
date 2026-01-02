@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/contactUs.css">
+ <!-- lidhja me jquery--><script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+
+     <nav class="navbar">
+         <ul class="slidebar">
+           <li onclick=closeSlideBar()><a href="#"><i class="fa-solid fa-x"></i></a></li>
+
+            <li><a href="homePage.html">Home</a></li>
+            <li><a href="PropertiesPage.html">Properties</a></li>
+            <li><a href="contactUs.html">Contact Us</a> </li>
+        </ul>
+
+        <ul class="navbarLeft">
+             <li id="casafindname">  CasaFind</li>
+
+        </ul>
+        <ul class="navbarRight">
+            <li class="hideOnMobile"><a href="homePage.html">Home</a></li>
+            <li class="hideOnMobile"><a href="PropertiesPage.html">Properties</a></li>
+            <li class="hideOnMobile"><a href="contactUs.html"></a>Contact Us</li>
+            <li class="menubuton " onclick="showSlideBar()" ><a href="#"><i class="fa-solid fa-list"></i></a></li>
+        </ul>
+    
+     </nav>
+   <script>
+        function showSlideBar(){
+const slidebar=document.querySelector('.slidebar')
+slidebar.style.display='flex';
+        }
+        function closeSlideBar(){
+            const slidebar=document.querySelector('.slidebar')
+            slidebar.style.display='none';
+        }
+     </script> 
+
+
+    <section class="contactUs">
+
+    <div class="contactHero">
+          <img src="../images/apartment2.webp">          
+
+        <div class="HeroMessage">
+       <h2>We would love te hear from you</h2>
+        </div>
+
+    </div>
+    </section>
+
+    <section class="contactForm">
+        <div class="formContainer">
+            <br>
+            <h2>Drop us a message, let's find your home </h2><br>
+            <h3>Feel free to reach out if you’re interested in buying, selling, or renting a property with CasaFind.</h3>
+        </div>
+        <div class="completeForms">
+            <form >
+                <div class="fullnameForm"> 
+                <input type="text" name="name"  placeholder="Name" required class="border">
+                <input type="text" name="surname" placeholder="Lastname" required class="border">
+                </div>
+                <input type="email"  name="email" placeholder="someone@example.com" required class="border">
+                <input type="tel" placeholder="Phone Number (optional)" class="border">
+                <select class="border">
+                    <option value="" disabled selected>Select your interests</option>
+                    <option value="buy" >Buying a property</option>
+                    <option value="sell" >Selling a property</option>
+                    <option value="rent" >Renting a property</option>
+
+                </select>
+                <textarea name="message" placeholder="How can we help you?" required class="border"></textarea>
+                <button id="sendemail"type="submit" class="borderbuton">Send</button>
+
+            </form>
+        </div>
+    </section>
+  <script>
+    $(document).ready(function(){
+        $("form").on("submit", function(e){
+            e.preventDefault();
+            alert("Message sent successfully");
+        });
+    });
+</script>
+
+<section class="contactEmail">
+    <div class="underContactUs">
+        <h2>Prefer email? Let's talk</h2>
+        <a href="mailto:">realestateCasaFind@gmail.com</a>
+    </div>
+
+</section>
+ <footer>
+        <div class="llogofooter">
+            <h1>CasaFind</h1>
+            <p>Home starts here!</p>
+            
+        </div>
+
+        <div class="addressFooter">
+           <a href=" https://www.google.com/maps/place/D%C3%ABshmor%C3%ABt+e+kombit,+Prishtina+10000/@42.6605711,21.1821011,18.18z/data=!4m6!3m5!1s0x13549ed619d39799:0x7ab90d60246bdb1d!8m2!3d42.660619!4d21.1823452!16s%2Fg%2F1vlcz05x!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"> Rruga Deshmoret e Kombit, Ulpiane, Prishtine, Kosove</a> <br>
+            <a href="mailto:someone@gamil.com">info@example.com</a>
+            <a href="">| +383 45 455 554 </a>
+        </div>
+
+        <div class="socialFooter"> 
+            <a href="">  <i class="fa-brands fa-facebook"></i></a>
+              <a href=" "> <i class="fa-brands fa-instagram"></i></a>
+               <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+
+        </div>
+
+
+    </footer>
+   
+</body>
+</html>
