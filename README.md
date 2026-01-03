@@ -27,7 +27,7 @@ A website which allows user to buy, rent and sell real estate properties.
 ├── js/ JavaScript modules
 ├── images/ Property and UI images
 ├── properties.json Dataset of properties
-├── index.html Entry point
+├── homePage.html Entry point
 
 ## Usage
 
@@ -43,4 +43,4 @@ A website which allows user to buy, rent and sell real estate properties.
 - Property data is defined in `properties.json`.
 - Client-side logic is implemented in the `js/` directory.
 - Layout and responsiveness are handled in `css/`.
-- Open `index.html` directly in a browser.
+- Open `homePage.html` directly in a browser.
