@@ -34,7 +34,7 @@ A website which allows user to buy, rent and sell real estate properties.
 1. Clone repository  
    `git clone https://github.com/JonZylfiu/propertyPortal.git`
 
-2. Open `index.html` in a browser.
+2. Open `homePage.html` in a browser.
 
 3. Use search bar and filters to explore listings.
 
